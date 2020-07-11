@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Upload File</h1>
+  <br>
+  <form class="form-inline" action="{{url_for('index')}}" method="post" enctype="multipart/form-data">
+    <div class="from-group">
+      <input type="file" name="file" class="btn btn-default" >
+    </div>
+    <div class="from-group">
+      <input type="submit" value="upload" class="btn btn-default" >
+    </div>
+  </form>
+
+</div>
+{%endblock%}
